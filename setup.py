@@ -1,8 +1,5 @@
 from setuptools import setup, find_packages
 
-with open("README.md", "r") as f:
-    long_description = f.read()
-
 setup(
     name='genai-protocol-lite',
     version='1.0.0',
