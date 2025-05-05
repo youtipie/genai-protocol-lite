@@ -1,0 +1,15 @@
+services:
+  p2p-chat:
+#    container_name: p2p-chat
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    stdin_open: true
+    deploy:
+      replicas: 4
+#    ports:
+#      - "5000:5000"
+#    command: python main.py
+    command: tail -f /dev/null
+

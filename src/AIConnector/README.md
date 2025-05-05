@@ -1,6 +1,3 @@
-########################################
-
-```
 # Multi-Agent Communication Library
 
 This library provides a unified, session-based API for building distributed multi-agent communication systems. It
@@ -109,8 +106,8 @@ if __name__ == '__main__':
 - **`async send(target_client_name: str, text: str, timeout: Optional[float] = None) -> str`**
   Sends a message to a peer identified by `target_client_name` and waits for a response
 
-## Configuration Parameters
 
+## Configuration Parameters
 
 | Parameter                | Type            | Default Value | Description                                                                                        | Required In       |
 |--------------------------|-----------------|---------------|----------------------------------------------------------------------------------------------------|-------------------|
@@ -126,10 +123,9 @@ if __name__ == '__main__':
 | `peer_discovery_timeout` | `float`         | `30.0`        | Timeout (in seconds) for peer discovery.                                                           | `local`, `remote` |
 | `peer_ping_interval`     | `float`         | `5.0`         | Interval (in seconds) for pinging peers.                                                           | `local`, `remote` |
 | `azure_api_version`      | `str`           | `"1.0"`       | API version for Azure communications.                                                              | `remote`          |
-| `connection_type`        | `str`           | `"local"`     | Type of connection, either`"local"` or `"remote"`.                                                 | `local`, `remote` |
+| `connection_type`        | `str`           | `"local"`     | Type of connection, either `"local"` or `"remote"`.                                                | `local`, `remote` |
 
 ### Notes:
-
 - For **remote** connections, `azure_endpoint_url` and `azure_access_key` are required.
 - If `webserver_port` is not set, it will be selected from the range [`webserver_port_min`, `webserver_port_max`].
 - `connection_type` must be either `"local"` or `"remote"`.
