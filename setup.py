@@ -2,12 +2,12 @@ from setuptools import setup, find_packages
 
 setup(
     name='genai-protocol-lite',
-    version='1.0.1',
+    version='1.0.2',
     description="GenAI Python project for direct agents connection either locally via websockets or remote via Azure Web PubSub",
     long_description=open('README.md', encoding='utf-8').read(),
     long_description_content_type='text/markdown',
     author="Yaroslav Oliinyk, Yaroslav Motalov, Ivan Kuzlo, Pavlo Shyrinskykh",
-    author_email="yaroslav.oliinyk@chisw.com, yaroslav.motalov@chisw.com, ivan.kuzlo@chisw.com, pavlo.shyrinskykh@genai.works",
+    author_email="pavlo.shyrinskykh@genai.works",
     url="https://github.com/genai-works-org/genai-protocol-lite",
     readme="README.md",
     package_dir={"": "src"},
